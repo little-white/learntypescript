@@ -7,11 +7,11 @@ marked.setOptions({
   renderer: new TerminalRenderer()
 });
 
-exports.problem = marked(fs.readFileSync('./problems/primitive-data-type/problem.md', 'utf-8'));
+exports.problem = marked(fs.readFileSync(__dirname + '/problems/primitive-data-type/problem.md', 'utf-8'));
 
 exports.verify = function(args, cb) {
   console.log(args)
-  var runTest = require('./mocha')
+  var runTest = require(__dirname + '/mocha.js')
   if (runTest(args) === 0) {
     cb(true)
   } else {
