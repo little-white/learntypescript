@@ -1,4 +1,4 @@
-var isFile = require('../boolean.js')['default']
+var isFile = require(process.cwd() + '/boolean.js')['default']
 var { expect } = require('chai')
 
 describe('原始数据类型：布尔值', function() {
