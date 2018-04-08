@@ -5,7 +5,7 @@ var Mocha = require('mocha'),
 var mocha = new Mocha();
 
 mocha.addFile(
-  path.join('test', 'boolean.test.js')
+  path.join(__dirname, '/test/boolean.test.js')
 );
 
 module.exports = function(args, cb) {
