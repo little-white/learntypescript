@@ -19,7 +19,7 @@
     "ts-node": "^5.0.1"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register"
+    "test": "mocha -r ts-node/register test/boolean.test.ts"
   },
   "repository": {
     "type": "git",
