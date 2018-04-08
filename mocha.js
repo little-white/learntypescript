@@ -1,8 +1,19 @@
 var shell = require('shelljs')
-// require('ts-node')
-// require('typescript')
+var Mocha = require('mocha'),
+  fs = require('fs'),
+  path = require('path');
+var mocha = new Mocha();
 
-module.exports =  function (args) {
-  var testFile = args[0].slice(0, args[0].indexOf('.'))
-  return shell.exec('mocha -r ts-node/register '+ __dirname +'/test/'+ testFile +'.test.ts').code
+mocha.addFile(
+  path.join('test', 'boolean.test.js')
+);
+
+module.exports = function(args, cb) {
+  shell.exec('tsc ' + args[0])
+  mocha.run(function(failures) {
+    cb(failures)
+    process.on('exit', function() {
+      process.exit(failures); // exit with non-zero status if there were failures
+    });
+  });
 }
