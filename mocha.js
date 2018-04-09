@@ -4,11 +4,10 @@ var Mocha = require('mocha'),
   path = require('path');
 var mocha = new Mocha();
 
-mocha.addFile(
-  path.join(__dirname, '/test/boolean.test.js')
-);
-
 module.exports = function(args, cb) {
+  mocha.addFile(
+    path.join(__dirname, '/test/'+ args[0].split('.')[0] +'.test.js')
+  );
   shell.exec('tsc ' + args[0])
   mocha.run(function(failures) {
     cb(failures)

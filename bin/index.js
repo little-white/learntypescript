@@ -1,8 +1,11 @@
 #!/usr/bin/env node
-
+var menu = require('../menu');
 var adventure = require('adventure');
-var test = adventure('test');
-test.add('原始数据类型-布尔', function () {
-  return require('../boolean/index')
+var shop = adventure('学习typescript');
+
+menu.forEach(function (name) {
+  shop.add(name, function () {
+    return require('../'+ name +'/index')
+  })
 })
-test.execute(process.argv.slice(2));
+shop.execute(process.argv.slice(2));

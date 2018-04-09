@@ -42,10 +42,6 @@ let createdByBoolean: boolean = Boolean(1);
 
 # 挑战
 
-创建一个名为boolean.ts的文件，并在文件中创建一个`isFile`的变量，类型为布尔，值为true
-
-```typescript
-let isFile:boolean = true
-
-export default isFile
-```
+* 创建一个名为boolean.ts的文件
+* 在此文件中创建一个`isFile`的变量，类型为布尔，值为true
+* 对外默认提供此值
