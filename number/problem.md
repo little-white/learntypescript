@@ -31,5 +31,5 @@ var infinityNumber = Infinity;
 # 挑战
 
 * 创建一个名为number.ts的文件
-* 在此文件中创建一个`length`的变量，类型为布数值，值为77
+* 在此文件中创建一个`length`的变量，类型为数值，值为77
 * 对外默认提供此值

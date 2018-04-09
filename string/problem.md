@@ -25,5 +25,5 @@ var sentence = "Hello, my name is " + myName + ".\nI'll be " + (myAge + 1) + " y
 # 挑战
 
 * 创建一个名为string.ts的文件
-* 在此文件中创建一个`name`的变量，类型为布数值，值为supershy
+* 在此文件中创建一个`name`的变量，类型为字符串，值为supershy
 * 对外默认提供此值
