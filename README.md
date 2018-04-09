@@ -2,6 +2,8 @@
 
 > 通过adventure来学习typescript
 
+> 本文关于typescript的讲解内容来自于[《TypeScript 入门教程》](https://ts.xcatliu.com/)
+
 > 更多的教程请查看[*nodeschool.io.*](https://nodeschool.io/)
 
 ### 安装
