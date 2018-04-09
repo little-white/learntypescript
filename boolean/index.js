@@ -1,7 +1,13 @@
 var common = require('../common')
 var path = require('path');
-// var open = require("open");
-// open("http://www.baidu.com");
-exports.problem = common.problem(path.resolve(__dirname, 'problem.md'))
-exports.solution = common.problem(path.resolve(__dirname, 'solution.md'))
+var open = require("open");
+
+exports.problem = function () {
+  open("https://github.com/little-white/learntypescript/blob/master/boolean/problem.md");
+  return common.problem(path.resolve(__dirname, 'problem.md'))
+}
+exports.solution = function () {
+  open("https://github.com/little-white/learntypescript/blob/master/boolean/solution.md");
+  return common.problem(path.resolve(__dirname, 'solution.md'))
+}
 exports.verify = common.verify

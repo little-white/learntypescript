@@ -2,7 +2,6 @@ var fs = require('fs');
 var marked = require('marked');
 var TerminalRenderer = require('marked-terminal');
 
-
 marked.setOptions({
   renderer: new TerminalRenderer()
 });
