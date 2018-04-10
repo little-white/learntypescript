@@ -1,1 +1,1 @@
-module.exports = ['boolean', 'number', 'string', 'void', 'undefined', 'null'];
+module.exports = ['boolean', 'number', 'string', 'void', 'undefined', 'null', 'any'];
