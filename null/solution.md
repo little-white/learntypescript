@@ -1,7 +1,7 @@
 > 创建void.ts文件内容为：
 
 ```typescript
-let unusable:void = undefined
+let unusable:null = null
 
 export default unusable
 ```
