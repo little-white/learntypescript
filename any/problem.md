@@ -67,5 +67,5 @@ something.setName('Tom');
 
 * 创建一个名为any.ts的文件
 * 在此文件中创建一个`anyThing`的变量，类型为any，值为'hello'
-* 在此文件中创建一个`something`的变量，不写类型，值为'world'
+* 在此文件中创建一个`something`的变量，不写类型，并赋值为'world'
 * 对外提供这俩变量
