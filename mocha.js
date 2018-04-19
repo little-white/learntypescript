@@ -8,7 +8,7 @@ module.exports = function(args, cb) {
   mocha.addFile(
     path.join(__dirname, '/test/'+ args[0].split('.')[0] +'.test.js')
   );
-  shell.exec('tsc ' + args[0])
+  shell.exec('tsc --noImplicitUseStrict ' + args[0])
   mocha.run(function(failures) {
     cb(failures)
     process.on('exit', function() {
