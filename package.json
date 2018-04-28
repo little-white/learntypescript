@@ -1,6 +1,6 @@
 {
   "name": "learntypescript",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "",
   "main": "index.js",
   "bin": "./bin/index.js",
@@ -33,5 +33,7 @@
     "url": "https://github.com/little-white/learntypescript/issues"
   },
   "homepage": "https://github.com/little-white/learntypescript#readme",
-  "engines" : { "node" : "<10.0.0" }
+  "engines": {
+    "node": "<10.0.0"
+  }
 }
