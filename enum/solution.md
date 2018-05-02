@@ -1,4 +1,4 @@
-> 创建function.ts文件内容为：
+> 创建enum.ts文件内容为：
 
 ```typescript
 enum Enviroment {
